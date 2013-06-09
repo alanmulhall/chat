@@ -1,0 +1,1 @@
+Event.where("DATE_PART('hour', updated_at) = ?", 22).group('event_id').count
