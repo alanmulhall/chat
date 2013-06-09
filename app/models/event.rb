@@ -4,12 +4,13 @@ class Event < ActiveRecord::Base
                   :updated_at
 
   belongs_to :event_type
+  belongs_to :user
 
   class << self
 
     def get(options)
       events = Event.where('created_at >= ?', Time.zone.now.beginning_of_day - 7.day)
-      unless options[:type] == 'all'
+      unless options[:display] == 'all'
         events.includes(:event_type).order('created_at DESC')
           .group_by{|r| r.created_at.hour}
         #TODO call count_events here...

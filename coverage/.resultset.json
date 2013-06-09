@@ -1,0 +1,101 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/alan/rails_apps/chat/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/helpers/events_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/controllers/events_controller.rb": [
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/models/event.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/models/event_type.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/models/message.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/alan/rails_apps/chat/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1370818802
+  }
+}
