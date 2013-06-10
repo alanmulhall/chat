@@ -1,4 +1,3 @@
-#http://stackoverflow.com/questions/10484621/how-can-i-group-on-the-created-at-field-and-return-only-the-date-and-hour
 class EventsController < ApplicationController
 
   def index
