@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130610000928) do
+ActiveRecord::Schema.define(:version => 20130610031220) do
 
   create_table "event_types", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,11 @@ ActiveRecord::Schema.define(:version => 20130610000928) do
     t.integer  "user_id"
   end
 
+  add_index "events", ["chat_room_id"], :name => "index_events_on_chat_room_id"
+  add_index "events", ["created_at"], :name => "index_events_on_created_at"
+  add_index "events", ["event_type_id"], :name => "index_events_on_event_type_id"
+  add_index "events", ["user_id"], :name => "index_events_on_user_id"
+
   create_table "messages", :force => true do |t|
     t.text     "content"
     t.integer  "user_id"
@@ -34,6 +39,9 @@ ActiveRecord::Schema.define(:version => 20130610000928) do
     t.datetime "updated_at", :null => false
     t.integer  "event_id"
   end
+
+  add_index "messages", ["event_id"], :name => "index_messages_on_event_id"
+  add_index "messages", ["user_id"], :name => "index_messages_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "first_name"

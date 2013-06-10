@@ -8,4 +8,4 @@
 
 * rake db:seed
 
-http://still-hollows-5998.herokuapp.com/
+http://still-hollows-5998.herokuapp.com
