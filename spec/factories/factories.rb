@@ -17,6 +17,7 @@ FactoryGirl.define do
 
   factory :message do
     content Faker::Lorem.paragraph
+    event
     user
   end
 

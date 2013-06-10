@@ -1,8 +1,13 @@
-#http://stackoverflow.com/questions/3491650/is-it-possible-to-group-by-hour-minute-quarter-hour-directly-in-activerecord-rai
-#http://stackoverflow.com/questions/449271/how-to-round-a-time-down-to-the-nearest-15-minutes-in-ruby
+#http://stackoverflow.com/questions/10484621/how-can-i-group-on-the-created-at-field-and-return-only-the-date-and-hour
 class EventsController < ApplicationController
+
   def index
-    @type = params[:display] ||= 'test'
-    @events = Event.get :type => @type
+    @display_type = params[:display] ||= 'all'
+    if @display_type == 'all'
+      @events = Event.all
+    else
+      @events = Event.get :display => @display_type
+    end
   end
+
 end

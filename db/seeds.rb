@@ -56,6 +56,9 @@ Event.create(:event_type_id => event_types[2].id, :user_id => users.first.id,
              :updated_at => (Time.zone.now - 1.hour))
 #messages
 Message.delete_all
+events_with_message = Event.where(:event_type_id => event_types[2].id)
 
-Message.create(:content => 'Hey, Kate - high five?' , :user_id => users[1].id)
-Message.create(:content => 'Oh, typical' , :user_id => users.first.id)
+Message.create(:content => 'Hey, Kate - high five?' , :user_id => users[1].id,
+               :event_id => events_with_message.first.id)
+Message.create(:content => 'Oh, typical' , :user_id => users.first.id,
+               :event_id => events_with_message.last.id)
