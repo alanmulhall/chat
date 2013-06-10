@@ -1,0 +1,43 @@
+$primary_color: #3796ce;
+
+body {
+  background: $primary_color url(asset_path('background.jpg', image)) no-repeat top center;
+  color: $primary_color;
+  font-size: 18px;
+  font-family: Verdana;
+}
+
+hr {
+  background-color: $primary_color;
+  border: 0;
+  color: $primary_color;
+  height: 1px;
+}
+
+.events {
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: -21px;
+  margin-bottom: 100px;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.filters {
+  margin: 380px 0 0 30px;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.time {
+  margin-top: 40px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 692px;
+}

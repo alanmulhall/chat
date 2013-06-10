@@ -1,9 +1,8 @@
--#= @events.inspect
-- @events.each do |index, e|
-  - e.each do |event|
-    %p
-      = event.created_at.strftime('%H:00')
-    %p
-      = event.event_type.name
--#%hr
--#= Event.count_events(@events).inspect
+.events
+  - @events.each do |index, e|
+    %p.time
+      = get_time index
+    %hr
+      - e.each do |key, value|
+        %p.indent
+          = "#{value} #{key}"

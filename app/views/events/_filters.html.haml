@@ -1,0 +1,3 @@
+.filters
+  = form_tag "/events", :method => "get", :id => "display_type" do
+    = select_tag "display", "<option value='all' #{'selected' if @display_type == 'all'}>All</option><option value='hour' #{'selected' if @display_type == 'hour'}>Hour</option>".html_safe

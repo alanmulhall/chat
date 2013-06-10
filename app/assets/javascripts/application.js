@@ -13,3 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function () {
+  $('#display', '.wrapper').on('change', function (e) {
+    $('#display_type', '.wrapper').submit();
+  });
+});

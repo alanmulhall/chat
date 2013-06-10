@@ -11,10 +11,9 @@ class Event < ActiveRecord::Base
 
     def get(options)
       events = Event.where('created_at >= ?', Time.zone.now.beginning_of_day - 7.day)
-      unless options[:display] == 'all'
+      unless options[:display] == 'all' && self.is_safe?(options[:display])
         events.includes(:event_type).order('created_at DESC')
           .group_by{|r| r.created_at.hour}
-        #TODO call count_events here...
       end
     end
 
@@ -41,6 +40,11 @@ class Event < ActiveRecord::Base
 
       counted
     end
+
+    def is_safe?(display_type)
+      %w(hour).include? display_type.downcase
+    end
+
   end
 
 end

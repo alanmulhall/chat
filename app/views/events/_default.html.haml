@@ -1,4 +1,4 @@
--#= @events.inspect
-- @events.each do |e|
-  %p
-    = "#{e.created_at.strftime("%I:%M%p")} #{e.user.first_name} #{display_event e}"
+.events
+  - @events.each do |e|
+    %p
+      = "#{e.created_at.strftime("%I:%M%p")}: #{e.user.first_name} #{display_event e}"
