@@ -7,3 +7,5 @@
 * rake db:migrate
 
 * rake db:seed
+
+* view the app here: [http://still-hollows-5998.herokuapp.com/] (http://still-hollows-5998.herokuapp.com/)
