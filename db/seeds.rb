@@ -61,4 +61,8 @@ events_with_message = Event.where(:event_type_id => event_types[2].id)
 Message.create(:content => 'Hey, Kate - high five?' , :user_id => users[1].id,
                :event_id => events_with_message.first.id)
 Message.create(:content => 'Oh, typical' , :user_id => users.first.id,
-               :event_id => events_with_message.last.id)
+               :event_id => events_with_message[1].id)
+Message.create(:content => 'Hey, Kate - high five again?' , :user_id => users[1].id,
+               :event_id => events_with_message[2].id)
+Message.create(:content => 'Oh, typical again' , :user_id => users.first.id,
+               :event_id => events_with_message[3].id)
