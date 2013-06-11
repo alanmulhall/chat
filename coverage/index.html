@@ -23,14 +23,14 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-06-11T09:50:38-07:00">2013-06-11T09:50:38-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-06-11T14:53:03-07:00">2013-06-11T14:53:03-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.64%</span></span>
+    (<span class="covered_percent"><span class="green">94.55%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -41,8 +41,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>56</b> relevant lines. 
-    <span class="green"><b>53</b> lines covered</span> and
+    <b>55</b> relevant lines. 
+    <span class="green"><b>52</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -103,8 +103,8 @@
         <td class="strong"><a href="#3e5b1f694a0ecf76b6a5edb49a2d6eb6bf42c5a6" class="src_link" title="app/models/event.rb">app/models/event.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>53</td>
-        <td>30</td>
-        <td>30</td>
+        <td>29</td>
+        <td>29</td>
         <td>0</td>
         <td>2.3</td>
       </tr>
@@ -216,8 +216,8 @@
   <a name="Models"></a>
   <div>
     <b>4</b> files in total.
-    <b>41</b> relevant lines. 
-    <span class="green"><b>41</b> lines covered</span> and
+    <b>40</b> relevant lines. 
+    <span class="green"><b>40</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -238,8 +238,8 @@
         <td class="strong"><a href="#3e5b1f694a0ecf76b6a5edb49a2d6eb6bf42c5a6" class="src_link" title="app/models/event.rb">app/models/event.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>53</td>
-        <td>30</td>
-        <td>30</td>
+        <td>29</td>
+        <td>29</td>
         <td>0</td>
         <td>2.3</td>
       </tr>
@@ -738,8 +738,8 @@
     <h3>app/models/event.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>30</b> lines covered</span> and
+      <b>29</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -831,10 +831,10 @@
           <code class="ruby">        events = Event.where('created_at &gt;= ?', Time.zone.now.beginning_of_day - 30.day)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="15">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="15">
           
-          <code class="ruby">        events = events.includes(:event_type).order('created_at DESC')</code>
+          
+          <code class="ruby">          .includes(:event_type).order('created_at DESC')</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="16">
