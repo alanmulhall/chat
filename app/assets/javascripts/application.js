@@ -15,7 +15,7 @@
 //= require_tree .
 
 $(document).ready(function () {
-  $('#display', '.wrapper').on('change', function (e) {
+  $('#display', '.wrapper').on('change', function () {
     $('#display_type', '.wrapper').submit();
   });
 });

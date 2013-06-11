@@ -15,11 +15,6 @@ describe EventsController do
       response.should be_success
     end
 
-    it "assigns @events" do
-      #do_get
-      #assigns(:events).should eq events
-    end
-
     context "with no display type" do
       it "assigns @display_type as 'all'" do
         do_get
@@ -29,7 +24,8 @@ describe EventsController do
 
     context "with display type" do
       it "assigns @display_type with params[:display]" do
-        #TODO
+        get :index, :display => 'hour'
+        assigns(:display_type).should eq 'hour'
       end
     end
 

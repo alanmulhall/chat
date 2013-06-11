@@ -1,4 +1,9 @@
 .events
+  -#= @events.inspect
+  -#- @events.each do |index, e|
+  -#  - e.each do |key, value|
+  -#    %p.indent
+  -#      = "#{key.created_at.strftime("%I:%M%p")}: #{key.user.first_name} #{display_event key}"
   - @events.each do |e|
     %p
       = "#{e.created_at.strftime("%I:%M%p")}: #{e.user.first_name} #{display_event e}"

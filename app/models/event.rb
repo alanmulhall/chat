@@ -10,10 +10,13 @@ class Event < ActiveRecord::Base
   class << self
 
     def get(options)
-      events = Event.where('created_at >= ?', Time.zone.now.beginning_of_day - 7.day)
-      unless options[:display] == 'all' && self.is_safe?(options[:display])
-        events.includes(:event_type).order('created_at DESC')
+      if options[:display] != 'all' && self.is_safe?(options[:display])
+        events = Event.where('created_at >= ?', Time.zone.now.beginning_of_day - 30.day)
+        events = events.includes(:event_type).order('created_at DESC')
           .group_by{|r| r.created_at.hour}
+        self.count_events events
+      else
+        all
       end
     end
 

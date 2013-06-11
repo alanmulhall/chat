@@ -1,5 +1,5 @@
 = render "filters"
-- if @display_type == 'all'
-  = render 'default'
-- else
+- if @display_type == 'hour'
   = render 'time'
+- else
+  = render 'default'
