@@ -1,6 +1,8 @@
-"!https://codeclimate.com/github/alanmulhall/chat.png!":https://codeclimate.com/github/alanmulhall/chat
-"!https://gemnasium.com/locomotivecms/engine.png(Dependency Status)!":https://codeclimate.com/github/alanmulhall/chat
+h1. Chat
 
+"!https://codeclimate.com/github/alanmulhall/chat.png!":https://codeclimate.com/github/alanmulhall/chat
+
+"!https://gemnasium.com/alanmulhall/chat.png(Dependency Status)!":https://gemnasium.com/alanmulhall/chat
 
 * clone the repo
 
