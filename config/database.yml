@@ -8,8 +8,6 @@ test:
   adapter:  postgresql
   encoding: unicode
   database: chat_test
-  username: alan
-  password: 
 
 production:
   adapter: sqlite3
