@@ -1,12 +1,6 @@
 h1. Chat
 
-"!https://secure.travis-ci.org/alanmulhall/chat.png!":http://travis-ci.org/alanmulhall/chat
-
-"!https://codeclimate.com/github/alanmulhall/chat.png!":https://codeclimate.com/github/alanmulhall/chat
-
-!https://coveralls.io/repos/alanmulhall/chat/badge.png(Coverage Status)!:https://coveralls.io/r/alanmulhall/chat
-
-"!https://gemnasium.com/alanmulhall/chat.png(Dependency Status)!":https://gemnasium.com/alanmulhall/chat
+"!https://secure.travis-ci.org/alanmulhall/chat.png!":http://travis-ci.org/alanmulhall/chat "!https://codeclimate.com/github/alanmulhall/chat.png!":https://codeclimate.com/github/alanmulhall/chat !https://coveralls.io/repos/alanmulhall/chat/badge.png(Coverage Status)!:https://coveralls.io/r/alanmulhall/chat "!https://gemnasium.com/alanmulhall/chat.png(Dependency Status)!":https://gemnasium.com/alanmulhall/chat
 
 * clone the repo
 
