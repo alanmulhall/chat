@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'jquery-rails'
 gem 'haml-rails', '~> 0.3.4'
+gem 'coveralls', require: false
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -22,5 +23,5 @@ group :test, :development do
   gem 'database_cleaner', '~> 0.8.0'
   gem 'spork', '~> 0.9.2'
   gem 'launchy', '~> 2.1.0'
-  gem 'simplecov', '~> 0.6.4'
+  #gem 'simplecov', '~> 0.6.4'
 end
