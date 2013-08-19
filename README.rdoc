@@ -1,3 +1,7 @@
+"!https://codeclimate.com/github/alanmulhall/chat.png!":https://codeclimate.com/github/alanmulhall/chat
+"!https://gemnasium.com/locomotivecms/engine.png(Dependency Status)!":https://codeclimate.com/github/alanmulhall/chat
+
+
 * clone the repo
 
 * bundle install
