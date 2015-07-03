@@ -14,4 +14,4 @@ p. Proof of concept for a small rails based chat application
 
 * rake db:seed
 
-http://still-hollows-5998.herokuapp.com
+
